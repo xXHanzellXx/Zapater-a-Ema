@@ -13,7 +13,7 @@ API CLIENT
 // https://zapateria-ema-api.onrender.com/api
 //
 
-const API_BASE = "https://zapateria-ema-api.onrender.com/api";
+const API_BASE = "https://zapater-a-ema.onrender.com";
 
 
 /*
