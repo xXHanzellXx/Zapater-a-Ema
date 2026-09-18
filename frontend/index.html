@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Zapatería Ema - Calzado para todos los estilos"
+    >
+
+    <title>Zapatería Ema</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <!-- =========================
+         BARRA SUPERIOR
+    ========================== -->
+
+    <div class="top-bar">
+        <div class="top-bar-content">
+
+            <span>
+                📍 San Juan de Dios, Aserrí, Costa Rica
+            </span>
+
+            <span>
+                ✦ Calidad y estilo para cada paso
+            </span>
+
+        </div>
+    </div>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="navbar-container">
+
+            <a
+                href="#inicio"
+                class="logo"
+            >
+                <span class="logo-icon">E</span>
+
+                <span class="logo-text">
+                    <strong>Zapatería</strong>
+                    <span>Ema</span>
+                </span>
+            </a>
+
+
+            <nav class="main-nav">
+
+                <a href="#inicio">
+                    Inicio
+                </a>
+
+                <a href="#productos">
+                    Catálogo
+                </a>
+
+                <a href="#categorias">
+                    Categorías
+                </a>
+
+                <button
+                    type="button"
+                    class="admin-nav-button"
+                    id="openAdminLogin"
+                >
+                    ⚙ Administración
+                </button>
+
+            </nav>
+
+
+            <button
+                class="mobile-menu-button"
+                id="mobileMenuButton"
+                type="button"
+                aria-label="Abrir menú"
+            >
+                ☰
+            </button>
+
+        </div>
+
+
+        <div
+            class="mobile-nav"
+            id="mobileNav"
+        >
+
+            <a href="#inicio">
+                Inicio
+            </a>
+
+            <a href="#productos">
+                Catálogo
+            </a>
+
+            <a href="#categorias">
+                Categorías
+            </a>
+
+            <button
+                type="button"
+                id="mobileAdminButton"
+            >
+                ⚙ Administración
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <main>
+
+        <section
+            class="hero"
+            id="inicio"
+        >
+
+            <div class="hero-background-circle circle-one"></div>
+            <div class="hero-background-circle circle-two"></div>
+
+
+            <div class="hero-content">
+
+                <div class="hero-label">
+                    <span></span>
+                    NUEVA COLECCIÓN
+                </div>
+
+                <h1>
+                    Encuentra el par
+                    <em>perfecto</em>
+                    para ti.
+                </h1>
+
+                <p>
+                    Descubre nuestra colección de calzado,
+                    seleccionada para combinar comodidad,
+                    calidad y estilo en cada paso.
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#productos"
+                        class="primary-button"
+                    >
+                        Ver catálogo
+                        <span>→</span>
+                    </a>
+
+                    <a
+                        href="#categorias"
+                        class="secondary-button"
+                    >
+                        Explorar categorías
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-decoration">
+
+                <div class="shoe-placeholder">
+                    <div class="shoe-shape">
+                        👟
+                    </div>
+                </div>
+
+                <div class="floating-card">
+                    <span>✦</span>
+                    <div>
+                        <strong>Estilo & Calidad</strong>
+                        <small>Para cada ocasión</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             BENEFICIOS
+        ========================== -->
+
+        <section class="benefits">
+
+            <div class="benefit-item">
+                <div class="benefit-icon">✓</div>
+                <div>
+                    <strong>Productos seleccionados</strong>
+                    <span>Calidad para nuestros clientes</span>
+                </div>
+            </div>
+
+            <div class="benefit-item">
+                <div class="benefit-icon">◆</div>
+                <div>
+                    <strong>Diferentes estilos</strong>
+                    <span>Opciones para todos</span>
+                </div>
+            </div>
+
+            <div class="benefit-item">
+                <div class="benefit-icon">♡</div>
+                <div>
+                    <strong>Atención personalizada</strong>
+                    <span>Estamos para ayudarte</span>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PRODUCTOS
+        ========================== -->
+
+        <section
+            class="products-section"
+            id="productos"
+        >
+
+            <div class="section-header">
+
+                <div>
+
+                    <div class="section-label">
+                        NUESTRO CATÁLOGO
+                    </div>
+
+                    <h2>
+                        Encuentra tu próximo par
+                    </h2>
+
+                    <p>
+                        Explora nuestros productos disponibles.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- BUSCADOR -->
+
+            <div class="catalog-tools">
+
+                <div class="search-container">
+
+                    <span class="search-icon">
+                        🔎
+                    </span>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Buscar zapatos..."
+                    >
+
+                    <button
+                        type="button"
+                        id="clearSearch"
+                        class="clear-search"
+                    >
+                        ×
+                    </button>
+
+                </div>
+
+
+                <div
+                    class="category-filters"
+                    id="categoryFilters"
+                >
+                    <button
+                        class="category-filter active"
+                        data-category="todos"
+                    >
+                        Todos
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- CONTADOR -->
+
+            <div class="products-status">
+
+                <span id="productsCount">
+                    Cargando productos...
+                </span>
+
+                <button
+                    type="button"
+                    id="reloadProducts"
+                    class="reload-button"
+                >
+                    ↻ Actualizar
+                </button>
+
+            </div>
+
+
+            <!-- GRID -->
+
+            <div
+                class="products-grid"
+                id="productsGrid"
+            >
+
+                <div class="loading-container">
+
+                    <div class="loader"></div>
+
+                    <p>
+                        Cargando catálogo...
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- SIN RESULTADOS -->
+
+            <div
+                class="empty-products hidden"
+                id="emptyProducts"
+            >
+
+                <div class="empty-icon">
+                    🔍
+                </div>
+
+                <h3>
+                    No encontramos productos
+                </h3>
+
+                <p>
+                    Intenta cambiar la búsqueda o categoría.
+                </p>
+
+                <button
+                    type="button"
+                    id="resetFilters"
+                    class="primary-button"
+                >
+                    Ver todos los productos
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CATEGORÍAS
+        ========================== -->
+
+        <section
+            class="categories-section"
+            id="categorias"
+        >
+
+            <div class="section-header centered">
+
+                <div class="section-label">
+                    EXPLORA
+                </div>
+
+                <h2>
+                    Nuestras categorías
+                </h2>
+
+                <p>
+                    Encuentra el estilo que estás buscando.
+                </p>
+
+            </div>
+
+
+            <div
+                class="categories-grid"
+                id="categoriesGrid"
+            >
+
+                <div class="loading-container">
+                    <div class="loader"></div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             INFORMACIÓN
+        ========================== -->
+
+        <section class="info-section">
+
+            <div class="info-content">
+
+                <div class="info-label">
+                    ZAPATERÍA EMA
+                </div>
+
+                <h2>
+                    Cada paso cuenta.
+                </h2>
+
+                <p>
+                    En Zapatería Ema buscamos ofrecer diferentes
+                    opciones de calzado para que puedas encontrar
+                    el producto que mejor se adapte a tu estilo
+                    y necesidades.
+                </p>
+
+                <a
+                    href="#productos"
+                    class="primary-button"
+                >
+                    Ver productos
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <div class="logo footer-logo">
+
+                    <span class="logo-icon">
+                        E
+                    </span>
+
+                    <span class="logo-text">
+                        <strong>Zapatería</strong>
+                        <span>Ema</span>
+                    </span>
+
+                </div>
+
+                <p>
+                    Calzado, estilo y comodidad
+                    para cada paso.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Navegación
+                </h4>
+
+                <a href="#inicio">
+                    Inicio
+                </a>
+
+                <a href="#productos">
+                    Catálogo
+                </a>
+
+                <a href="#categorias">
+                    Categorías
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Información
+                </h4>
+
+                <span>
+                    📍 San Juan de Dios
+                </span>
+
+                <span>
+                    Aserrí, Costa Rica
+                </span>
+
+                <span>
+                    ✉ Contáctanos
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 Zapatería Ema
+            </span>
+
+            <span>
+                Todos los derechos reservados
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =================================================
+         MODAL PRODUCTO
+    ================================================== -->
+
+    <div
+        class="modal-overlay"
+        id="productModal"
+    >
+
+        <div class="product-modal">
+
+            <button
+                type="button"
+                class="modal-close"
+                data-close-modal="productModal"
+            >
+                ×
+            </button>
+
+
+            <div class="product-modal-image">
+
+                <img
+                    id="modalProductImage"
+                    src=""
+                    alt="Producto"
+                >
+
+            </div>
+
+
+            <div class="product-modal-info">
+
+                <span
+                    class="modal-product-category"
+                    id="modalProductCategory"
+                >
+                    Categoría
+                </span>
+
+                <h2 id="modalProductName">
+                    Producto
+                </h2>
+
+                <p
+                    class="modal-product-description"
+                    id="modalProductDescription"
+                >
+                </p>
+
+
+                <div class="modal-product-details">
+
+                    <div>
+                        <span>Precio</span>
+                        <strong id="modalProductPrice">
+                            ₡0
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>Disponibilidad</span>
+                        <strong id="modalProductStock">
+                            Disponible
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         MODAL LOGIN ADMIN
+    ================================================== -->
+
+    <div
+        class="modal-overlay"
+        id="loginModal"
+    >
+
+        <div class="auth-modal">
+
+            <button
+                type="button"
+                class="modal-close"
+                data-close-modal="loginModal"
+            >
+                ×
+            </button>
+
+
+            <div class="auth-icon">
+                ⚙
+            </div>
+
+            <div class="auth-header">
+
+                <span>
+                    ÁREA RESTRINGIDA
+                </span>
+
+                <h2>
+                    Administración
+                </h2>
+
+                <p>
+                    Esta sección es exclusivamente para
+                    el administrador de Zapatería Ema.
+                    Desde aquí podrá gestionar productos
+                    y categorías.
+                </p>
+
+            </div>
+
+
+            <form id="loginForm">
+
+                <div class="form-group">
+
+                    <label for="loginEmail">
+                        Correo electrónico
+                    </label>
+
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        placeholder="admin@ejemplo.com"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="loginPassword">
+                        Contraseña
+                    </label>
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="••••••••"
+                        required
+                    >
+
+                </div>
+
+
+                <div
+                    class="form-message hidden"
+                    id="loginMessage"
+                >
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="primary-button full-button"
+                    id="loginButton"
+                >
+                    Iniciar sesión
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         PANEL ADMINISTRADOR
+    ================================================== -->
+
+    <div
+        class="modal-overlay admin-overlay"
+        id="adminModal"
+    >
+
+        <div class="admin-modal">
+
+            <div class="admin-header">
+
+                <div>
+
+                    <span class="section-label">
+                        PANEL PRIVADO
+                    </span>
+
+                    <h2>
+                        Administración
+                    </h2>
+
+                    <p id="adminWelcome">
+                        Gestiona el catálogo de Zapatería Ema.
+                    </p>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="modal-close"
+                    data-close-modal="adminModal"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <!-- TABS -->
+
+            <div class="admin-tabs">
+
+                <button
+                    type="button"
+                    class="admin-tab active"
+                    data-admin-tab="productos"
+                >
+                    👟 Productos
+                </button>
+
+                <button
+                    type="button"
+                    class="admin-tab"
+                    data-admin-tab="categorias"
+                >
+                    ◆ Categorías
+                </button>
+
+                <button
+                    type="button"
+                    class="admin-tab logout-tab"
+                    id="logoutButton"
+                >
+                    ↪ Cerrar sesión
+                </button>
+
+            </div>
+
+
+            <!-- =============================
+                 ADMIN PRODUCTOS
+            ============================== -->
+
+            <div
+                class="admin-panel active"
+                id="adminProductos"
+            >
+
+                <div class="admin-toolbar">
+
+                    <div>
+
+                        <h3>
+                            Productos
+                        </h3>
+
+                        <p>
+                            Agrega, modifica o elimina productos.
+                        </p>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="primary-button"
+                        id="newProductButton"
+                    >
+                        + Nuevo producto
+                    </button>
+
+                </div>
+
+
+                <div
+                    class="admin-products-grid"
+                    id="adminProductsGrid"
+                >
+                </div>
+
+            </div>
+
+
+            <!-- =============================
+                 ADMIN CATEGORIAS
+            ============================== -->
+
+            <div
+                class="admin-panel"
+                id="adminCategorias"
+            >
+
+                <div class="admin-toolbar">
+
+                    <div>
+
+                        <h3>
+                            Categorías
+                        </h3>
+
+                        <p>
+                            Administra las categorías del catálogo.
+                        </p>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="primary-button"
+                        id="newCategoryButton"
+                    >
+                        + Nueva categoría
+                    </button>
+
+                </div>
+
+
+                <div
+                    class="admin-categories-list"
+                    id="adminCategoriesList"
+                >
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         MODAL FORMULARIO PRODUCTO
+    ================================================== -->
+
+    <div
+        class="modal-overlay"
+        id="productFormModal"
+    >
+
+        <div class="form-modal">
+
+            <button
+                type="button"
+                class="modal-close"
+                data-close-modal="productFormModal"
+            >
+                ×
+            </button>
+
+
+            <div class="form-modal-header">
+
+                <span class="section-label">
+                    CATÁLOGO
+                </span>
+
+                <h2 id="productFormTitle">
+                    Nuevo producto
+                </h2>
+
+                <p>
+                    Completa la información del producto.
+                </p>
+
+            </div>
+
+
+            <form id="productForm">
+
+                <input
+                    type="hidden"
+                    id="productId"
+                >
+
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="productName">
+                            Nombre *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="productName"
+                            placeholder="Ej. Nike Air Max"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="productCategory">
+                            Categoría
+                        </label>
+
+                        <select id="productCategory">
+
+                            <option value="">
+                                Seleccionar categoría
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group full">
+
+                        <label for="productDescription">
+                            Descripción
+                        </label>
+
+                        <textarea
+                            id="productDescription"
+                            rows="4"
+                            placeholder="Descripción del producto..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="productPrice">
+                            Precio *
+                        </label>
+
+                        <input
+                            type="number"
+                            id="productPrice"
+                            min="0"
+                            step="0.01"
+                            placeholder="25000"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="productStock">
+                            Stock *
+                        </label>
+
+                        <input
+                            type="number"
+                            id="productStock"
+                            min="0"
+                            step="1"
+                            placeholder="10"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group full">
+
+                        <label for="productImage">
+                            URL de imagen
+                        </label>
+
+                        <input
+                            type="url"
+                            id="productImage"
+                            placeholder="https://ejemplo.com/imagen.jpg"
+                        >
+
+                        <small>
+                            La imagen se guardará como URL.
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="form-message hidden"
+                    id="productFormMessage"
+                >
+                </div>
+
+
+                <div class="form-actions">
+
+                    <button
+                        type="button"
+                        class="secondary-button"
+                        data-close-modal="productFormModal"
+                    >
+                        Cancelar
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="primary-button"
+                    >
+                        Guardar producto
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         MODAL CATEGORIA
+    ================================================== -->
+
+    <div
+        class="modal-overlay"
+        id="categoryFormModal"
+    >
+
+        <div class="form-modal small-modal">
+
+            <button
+                type="button"
+                class="modal-close"
+                data-close-modal="categoryFormModal"
+            >
+                ×
+            </button>
+
+
+            <div class="form-modal-header">
+
+                <span class="section-label">
+                    CATEGORÍAS
+                </span>
+
+                <h2 id="categoryFormTitle">
+                    Nueva categoría
+                </h2>
+
+                <p>
+                    Agrega una categoría al catálogo.
+                </p>
+
+            </div>
+
+
+            <form id="categoryForm">
+
+                <input
+                    type="hidden"
+                    id="categoryId"
+                >
+
+
+                <div class="form-group">
+
+                    <label for="categoryName">
+                        Nombre *
+                    </label>
+
+                    <input
+                        type="text"
+                        id="categoryName"
+                        placeholder="Ej. Deportivos"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="categoryDescription">
+                        Descripción
+                    </label>
+
+                    <textarea
+                        id="categoryDescription"
+                        rows="3"
+                        placeholder="Descripción de la categoría..."
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="categoryImage">
+                        URL de imagen
+                    </label>
+
+                    <input
+                        type="url"
+                        id="categoryImage"
+                        placeholder="https://ejemplo.com/imagen.jpg"
+                    >
+
+                </div>
+
+
+                <div
+                    class="form-message hidden"
+                    id="categoryFormMessage"
+                >
+                </div>
+
+
+                <div class="form-actions">
+
+                    <button
+                        type="button"
+                        class="secondary-button"
+                        data-close-modal="categoryFormModal"
+                    >
+                        Cancelar
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="primary-button"
+                    >
+                        Guardar categoría
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         MODAL CONFIRMACIÓN
+    ================================================== -->
+
+    <div
+        class="modal-overlay"
+        id="confirmModal"
+    >
+
+        <div class="confirm-modal">
+
+            <div class="confirm-icon">
+                !
+            </div>
+
+            <h2 id="confirmTitle">
+                ¿Confirmar acción?
+            </h2>
+
+            <p id="confirmText">
+                Esta acción no se puede deshacer.
+            </p>
+
+
+            <div class="confirm-actions">
+
+                <button
+                    type="button"
+                    class="secondary-button"
+                    id="cancelConfirm"
+                >
+                    Cancelar
+                </button>
+
+                <button
+                    type="button"
+                    class="danger-button"
+                    id="acceptConfirm"
+                >
+                    Confirmar
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         TOAST
+    ================================================== -->
+
+    <div
+        class="toast"
+        id="toast"
+    >
+
+        <span id="toastIcon">
+            ✓
+        </span>
+
+        <span id="toastMessage">
+            Acción realizada.
+        </span>
+
+    </div>
+
+
+    <script src="api.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
