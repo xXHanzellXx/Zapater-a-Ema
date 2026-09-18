@@ -1,75 +1,29 @@
-import os
-
-from dotenv import load_dotenv
-from pymongo import MongoClient
-from pymongo.errors import PyMongoError
+from datetime import datetime
 
 
-# =========================================================
-# CARGAR VARIABLES DE ENTORNO
-# =========================================================
-
-load_dotenv()
-
-
-MONGO_URI = os.getenv("MONGO_URI")
-DB_NAME = os.getenv("DB_NAME", "zapateria")
+def formatear_fecha(fecha):
+    """Convierte un objeto datetime o string a un formato de cadena ISO serializable."""
+    if isinstance(fecha, datetime):
+        return fecha.isoformat()
+    if isinstance(fecha, str):
+        return fecha
+    return None
 
 
-# =========================================================
-# VALIDAR CONFIGURACIÓN
-# =========================================================
+def producto_to_json(producto):
+    """Convierte los tipos BSON de MongoDB a tipos serializables en JSON."""
+    if not producto:
+        return None
 
-if not MONGO_URI:
-    raise RuntimeError(
-        "ERROR: No existe MONGO_URI en las variables de entorno."
-    )
-
-
-# =========================================================
-# CONEXIÓN A MONGODB
-# =========================================================
-
-try:
-
-    client = MongoClient(
-        MONGO_URI,
-        serverSelectionTimeoutMS=10000
-    )
-
-    db = client[DB_NAME]
-
-    productos_collection = db["productos"]
-
-    categorias_collection = db["categorias"]
-
-    administradores_collection = db["administradores"]
-
-except Exception as error:
-
-    print(
-        f"ERROR creando la conexión MongoDB: {error}"
-    )
-
-    raise
-
-
-# =========================================================
-# COMPROBAR CONEXIÓN
-# =========================================================
-
-def test_connection():
-
-    try:
-
-        client.admin.command("ping")
-
-        return True
-
-    except PyMongoError as error:
-
-        print(
-            f"ERROR conectando con MongoDB: {error}"
-        )
-
-        return False
+    return {
+        "_id": str(producto.get("_id", "")),
+        "nombre": producto.get("nombre", ""),
+        "descripcion": producto.get("descripcion", ""),
+        "precio": float(producto.get("precio", 0.0)),
+        "stock": int(producto.get("stock", 0)),
+        "imagen": producto.get("imagen", ""),
+        "categoria": producto.get("categoria", ""),
+        "estado": producto.get("estado", "Disponible"),
+        "fechaCreacion": formatear_fecha(producto.get("fechaCreacion")),
+        "fechaActualizacion": formatear_fecha(producto.get("fechaActualizacion")),
+    }
