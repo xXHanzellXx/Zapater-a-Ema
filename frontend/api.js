@@ -5,15 +5,8 @@ API CLIENT
 =========================================================
 */
 
-// URL DEL BACKEND DE RENDER
-//
-// Cuando Render te dé tu URL definitiva,
-// debe quedar así:
-//
-// https://zapateria-ema-api.onrender.com/api
-//
-
-const API_BASE = "https://zapater-a-ema.onrender.com";
+// URL BASE CON PREFIJO /api
+const API_BASE = "https://zapater-a-ema.onrender.com/api";
 
 
 /*
